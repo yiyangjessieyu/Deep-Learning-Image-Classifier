@@ -1,0 +1,2 @@
+-e git+https://github.com/benanne/Lasagne.git@9f591a5f3a192028df9947ba1e4903b3b46e8fe0#egg=Lasagne-master
+git+https://github.com/Theano/Theano.git@dfb2730348d05f6aadd116ce492e836a4c0ba6d6
