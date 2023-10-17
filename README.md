@@ -11,13 +11,11 @@ Therefore this is a multi-class image classification problem.
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
+- [Prerequisites to set up](#prerequisites)
 - [Tutorials](#tutorials)
 - [Setting Up the Data Science Environment](#setting-up-the-data-science-environment)
 - [Usage](#usage)
-- [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -90,20 +88,29 @@ jupyter kernelspec uninstall [insert your unwanted kernel]
 
 ## Usage
 
-You can now start using the Diabetic Retinopathy Detection project by running the provided Python scripts and notebooks. Refer to the project files for detailed usage instructions.
+You can now start using the Diabetic Retinopathy Detection project by running the provided Python scripts and notebooks in the order of: 
+1. extract_data.ipynb
+2. create_model.ipynb
+3. predict_dr.ipynb
 
-## Troubleshooting
+Refer to the project files for detailed usage instructions.
 
-TODO
 
 ## Contributing
 
-TODO? 
+1. **Fork the Repository** to your GitHub account.
 
-## License
+2. **Clone the Repository** to your local machine using `git clone`.
 
-TODO?
+3. **Make Changes**. Implement your improvements or new features.
+
+3. **Update Documention** for the README and/or any other files if your changes affect the project's setup or usage.
+
+4. **Commit and Push** to your forked repository.
+
 
 ---
 
-**Happy coding!**
+Thank you for contributing to this project to improve the detection of diabetic retinopath!
+
+
