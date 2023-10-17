@@ -1,0 +1,47 @@
+<View>
+    <Style> .text-in-middle { text-align: center; }</Style>
+    
+    <!-- TOP TITLE AREA -->
+    <View className="text-in-middle">
+    <Header value="Grade Diabetic Retinopathy"/> 
+    <Text name="instructions" value="Thank you! TODO Guidelines on grading"/>
+    </View>
+    
+      <!-- BOTTOM ANNOTATION AREA -->
+    <View style="display: flex; margin-top: 1em;">
+      
+      <!-- LEFT IMAGE AREA -->
+      <View style="flex: 73%; margin-left: 1em ">
+      <Image name="image" value="$image"/>
+      </View>
+      
+      <!-- RIGHT INPUT AREA -->
+      <View style="flex: 20%; box-shadow: 2px 2px 5px #999; padding: 0em 1em; margin-right: 0.5em; border-radius: 10px">
+      <View style="position: sticky; top: 0">
+        
+        <!-- CHOICE AREA -->
+        <Choices name="choices" toName="image" choice="single-radio" showInLine="false">
+          <Choice value="No DR"/>
+          <Choice value="Grade 1"/>
+          <Choice value="Grade 2"/>
+          <Choice value="Grade 3"/>
+          <Choice value="Grade 4"/>
+        </Choices>
+        
+        <!-- QUALITY AREA  -->
+        <View visibleWhen="choice-selected" style="height:120px">
+            <Header value="Select the image quality (optional)"/>
+            <Rating name="rating" toName="image" maxRating="3" icon="star" size="medium" />
+        </View>
+        
+    
+        <!-- COMMENT AREA -->
+        <Header value="Comments" />
+        <TextArea name="comments" toName="image" rows="4" editable="true" maxSubmissions="1" required="false"/>
+      
+        </View>
+      </View>
+    
+    </View>
+    </View>
+    

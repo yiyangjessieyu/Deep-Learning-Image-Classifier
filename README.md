@@ -14,6 +14,7 @@ Therefore this is a multi-class image classification problem.
 - [Prerequisites to set up](#prerequisites)
 - [Tutorials](#tutorials)
 - [Setting Up the Data Science Environment](#setting-up-the-data-science-environment)
+- [Image Annotator](#image-annotator)
 - [Usage](#usage)
 - [Contributing](#contributing)
 
@@ -85,6 +86,35 @@ pip install tensorflow
 ```bash
 jupyter kernelspec uninstall [insert your unwanted kernel]
 ```
+
+## Image Annotator
+
+Follow the instructions from [Label Studio](https://labelstud.io/guide/get_started.html#Quick-start)
+
+1. Install Label Studio:
+   ```bash
+   pip install label-studio
+   ```
+
+2. Start Label Studio:
+   ```bash
+   label-studio start
+   ```
+
+3. Open the Label Studio UI at http://localhost:8080.
+
+4. Sign up with an email address and password that you create.
+
+5. Click Create to create a project and start labeling data.
+
+6. Click Data Import and upload the data files (eg. UoA-DR or everything in the ./data folder)
+
+8. Click Labeling Setup and customize the template by copy and pasting the content from annotator.html
+
+9. Click Save to save your project.
+
+10. You’re ready to start labeling and annotating your data!
+
 
 ## Usage
 
